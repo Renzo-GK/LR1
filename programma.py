@@ -22,11 +22,34 @@ a = random.randint(1,100)
 b = random.randint(1,100)
 
 print(("Сколько будет"), a,"+", b, ("?"))
-example1 = input("Введи ответ: ")
+example1 = int(input("Введи ответ: "))
 
-rexample1 = a + b
+try:
+    rexample1 = a + b
 
-if example1 == rexample1:
-    print("Молодец, верно!")
-else:
-    print("Ну ты дура")
+    if example1 == rexample1:
+        print("Молодец, верно!")
+    else:
+        print("Ну ты дура")
+
+    print("Теперь вычитание.")
+
+    a2 = random.randint(1,100)
+    b2 = random.randint(1,100)
+
+except ValueError:
+    print("Точно число ввел?")
+
+
+print(("Сколько будет"), a2,"+", b2, ("?"))
+example2 = int(input("Введи ответ: "))
+
+try:
+    rexample2 = a2 + b2
+
+    if example2 == rexample2:
+        print("Молодец, верно!")
+    else:
+        print("Ну ты дура")
+except ValueError:
+    print("Пожалуйста, введи число.")
