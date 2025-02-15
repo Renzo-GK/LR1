@@ -76,3 +76,24 @@ try:
         print("Ну ты дура")
 except ValueError:
     print("Пожалуйста, введи число.")
+
+print("Деление.")
+
+
+a4 = random.randint(1,10)
+b4 = random.randint(1,10)
+
+
+
+print(("Сколько будет"), a4,"/", b4, ("?"))
+example4 = int(input("Введи ответ: "))
+
+try:
+    rexample4 = a4 + b4
+
+    if example4 == rexample4:
+        print("Молодец, верно!")
+    else:
+        print("Ну ты дура")
+except ValueError:
+    print("Пожалуйста, введи число.")
