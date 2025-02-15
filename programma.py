@@ -31,23 +31,46 @@ try:
         print("Молодец, верно!")
     else:
         print("Ну ты дура")
-
-    print("Теперь вычитание.")
-
-    a2 = random.randint(1,100)
-    b2 = random.randint(1,100)
-
 except ValueError:
     print("Точно число ввел?")
 
 
-print(("Сколько будет"), a2,"+", b2, ("?"))
+print("Теперь вычитание.")
+
+
+a2 = random.randint(1,100)
+b2 = random.randint(1,100)
+
+
+
+print(("Сколько будет"), a2,"-", b2, ("?"))
 example2 = int(input("Введи ответ: "))
 
 try:
     rexample2 = a2 + b2
 
     if example2 == rexample2:
+        print("Молодец, верно!")
+    else:
+        print("Ну ты дура")
+except ValueError:
+    print("Пожалуйста, введи число.")
+
+print("Умножение.")
+
+
+a3 = random.randint(1,10)
+b3 = random.randint(1,10)
+
+
+
+print(("Сколько будет"), a3,"*", b3, ("?"))
+example3 = int(input("Введи ответ: "))
+
+try:
+    rexample3 = a3 + b3
+
+    if example3 == rexample3:
         print("Молодец, верно!")
     else:
         print("Ну ты дура")
